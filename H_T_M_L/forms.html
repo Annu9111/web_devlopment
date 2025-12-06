@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Forms </title>
+</head>
+<body>
+    <h2>basic forms in html</h2>
+    <hr>
+    <h4>form 1</h4>
+    <form action="backend.php">
+        <label for="name">Name:</label>
+       <div>
+         <input type="text" name="my_name" id="name">
+       </div>
+       <br>
+       <label for="rollno">Rollno:</label>
+       <div>
+       <input type="number" name="my_rollno" id="rollno">
+       </div>
+       <br>
+       <label for="email">Email:</label>
+       <div>
+         <input type="email" name="my_email" id="email">
+       </div>
+       <br>
+       <div>
+        age 18 above: <input type="checkbox" name="myage" checked>
+       </div>
+       <br>
+       <div>
+        gender: Male <input type="radio" name="mygender"> female <input type="radio" name="mygender"> other <input type="radio" name="mygender">
+
+       </div>
+       <br>
+       <div>
+        Date of birth: <input type="date" name="date">
+       </div>
+       <br>
+       <label for="city">City:</label>
+       <select name="my_city" id="city">
+        <option value="jabalpur" selected>jabalpur</option>
+        <option value="ujjain">ujjain</option>
+        <option value="bhopal">bhopal</option>
+        <option value="gwalior">gwalior</option>
+        <option value="indore">indore</option>
+       </select>
+       <div>
+        <br>
+        <p>write below if any problem you face</p>
+        <textarea name="mytext" rows="10" cols="90" >type here</textarea>
+       </div>
+       <br>
+       <div>
+        <input type="submit" value="submit">
+       <input type="reset" value="reset">
+       </div>
+    </form>
+    <hr>
+
+    <h4>form2</h4>
+    <form action="backend.php"></form>
+    <label for="sname">Student Name:</label>
+    <div>
+      <input type="text" name="sname" id="sname">
+    </div>
+    <br>
+    <label for="rno">Roll No:</label>
+    <div>
+      <input type="number" name="rno" id="rno">
+    </div>
+    <br>
+    <label for="marks10">10th class percentage:</label>
+    <div>
+      <input type="number" name="marks10" id="marks10">
+    </div>
+    <br>
+    <label for="marks12">12th class percentage:</label>
+    <div>
+      <input type="number" name="marks12" id="marks12">
+    </div>
+    <br>
+    <label for="email">Student's active Email Id:</label>
+    <div>
+      <input type="email" name="email" id="email">
+    </div>
+    <br>
+    <label for="age">Is Student's age 18+:</label>
+    <!-- <div> -->
+      <input type="checkbox" name="age" id="age" checked>
+    <!-- </div> -->
+    <br>
+    <!-- <label for="gender"></label> -->
+    <div>
+      Student's gender: male <input type="radio" name="gender" > femail <input type="radio" name="gender"> other <input type="radio" name="gender">
+    </div>
+    <br>
+    <div>
+      date of birth: <input type="date" name="date">
+    </div>
+    <br>
+    <label for="sport">choose student's interested sport:</label>
+    <select name="sport" id="sport">
+      <option value="cricket">cricket</option>
+      <option value="badminton">badmintonhockey</option>
+      <option value="hockey">hockey</option>
+      <option value="kabadi">kabadi</option>
+      <option value="running">running</option>
+      <option value="kho-khopolo">kho-khopolo</option>
+      <option value="polo">polo</option>
+      <option value="swimming">swimming</option>
+    </select>
+    <br>
+    <p>write your habits</p>
+    <textarea name="textarea" rows="10" cols="90">start from here</textarea>
+    <br>
+    <div>
+      submit:<input type="submit" value="submit">
+      reset:<input type="reset" value="reset">
+    </div>
+
+    
+</body>
+</html>
