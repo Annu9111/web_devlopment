@@ -5,57 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>padding, margin, box</title>
     <style>
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin:0px;
+        }
         body{
             background-image: url('https://mcdn.wallpapersafari.com/medium/61/47/ed1PCz.jpg');
             background-size: cover;
             background-repeat: no-repeat;
         }
         .container{
-            /* background-color: rgb(239, 165, 217); */
+            background-color: rgb(239, 165, 217);
             height:100px;
             width:500px;
             padding: 5px 10px 5px 10px ;  /* top right bottom left*/
             border:5px solid rgb(228, 54, 63);
             border-radius: 15px;
             margin:10px 5px 12px 5px ;/* top right bottom*/
-            background-image: url('https://st2.depositphotos.com/1030808/11629/i/950/depositphotos_116298346-stock-photo-beautiful-lake-sunset.jpg');
-            background-size: cover;
+            /* background-image: url('https://st2.depositphotos.com/1030808/11629/i/950/depositphotos_116298346-stock-photo-beautiful-lake-sunset.jpg');
+            background-size: cover; */
         }
-        .bamboo{    /* background-color: rgb(239, 165, 217); */
+        .bamboo{    background-color: rgb(239, 165, 217);
             height:100px;
             width:500px;
             padding: 5px 10px 5px 10px ;  /* top right bottom left*/
             border:5px solid rgb(228, 54, 63);
             border-radius: 15px;
-            margin:10px 5px 12px 5px ;/* top right bottom*/
-            background-image: url('https://st3.depositphotos.com/1719830/14958/i/1600/depositphotos_149587212-stock-photo-green-bamboo-wall-for-textured.jpg');
-            background-size: cover;
+            margin:10px 5px 12px 5px ;/*top right bottom
+            /* background-image: url('https://st3.depositphotos.com/1719830/14958/i/1600/depositphotos_149587212-stock-photo-green-bamboo-wall-for-textured.jpg');
+            background-size: cover; */
 
         }
-        #first{
+        .ppp{
             color:darkblue;
+            font-size:12px;
+            font-family: cursive;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h2>this is a heading</h2>
-        <p id="first">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <hr width:500px  >
+        <p class="ppp">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
     </div>
 
     <div class="bamboo">
         <h2>this is a heading</h2>
-        <p id="second">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <hr width:500px>
+        <p class="ppp">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
     </div>
 
     <div class="container">
         <h2>this is a heading</h2>
-        <p id="third">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <hr width:500px>
+        <p class="ppp">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
     </div>
 
     <div class="container">
         <h2>this is a heading</h2>
-        <p id="fourth">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <hr width:500px>
+        <p class="ppp">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
     </div>
     
 </body>
