@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment in css</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lilex:ital,wght@0,100..700;1,100..700&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+        body{
+            
+        }
+        .container{
+            width:900px;
+            border:5px solid grey;
+            border-radius: 10px;
+            background-color: rgb(60, 79, 79);
+
+        }
+        .fruits{
+            border:3px solid grey;
+            margin:12px;
+            padding:10px 10px 10px 10px;
+            background-color: rgb(55, 136, 111);
+            border-radius: 15px;
+
+        }
+        .para{
+              font-family:"Cedarville Cursive", cursive;
+              font-size: 20px;
+
+        }
+        #apples{
+            float:left;
+            width:50%;
+
+        }
+        #bananas{
+            float:left;
+            width: 50%;
+            
+        }
+        #grapes{
+            float:left;
+            width:50%;
+
+        }
+        #oranges{
+            float:left;
+            width:50%
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>THE FRUITS IN MY CONTAINER</h2>
+        <div id="apples" class="fruits">
+            <h3>Apples</h3>
+            <p id="para1" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque soluta molestias vero sed. Possimus asperiores in, libero cumque inventore aspernatur. Dolor, impedit hic?
+            </p>
+
+        </div>
+        <div id="bananas" class="fruits">
+            <h3>Bananas</h3>
+            <p id="para2" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque soluta molestias vero sed. Possimus asperiores in, libero cumque inventore aspernatur. Dolor, impedit hic?
+            </p>
+
+        </div>
+        <div id="grapes" class="fruits">
+            <h3>Grapes</h3>
+            <p id="para3" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque soluta molestias vero sed. Possimus asperiores in, libero cumque inventore aspernatur. Dolor, impedit hic?
+            </p>
+
+        </div>
+        <div id="oranges" class="fruits">
+            <h3>Oranges</h3>
+            <p id="para4" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque soluta molestias vero sed. Possimus asperiores in, libero cumque inventore aspernatur. Dolor, impedit hic?
+            </p>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
