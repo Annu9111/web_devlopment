@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annu's backery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "Inter", sans-serif;
+            color:black;
+            margin:0px;
+            padding:0px;
+            background-image:url(background.png) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .left{
+            /* border:2px solid black; */
+            display: inline-block;
+            position:absolute;
+            top:35px;
+            left:35px;
+            font-family: "Edu NSW ACT Cursive", cursive;
+        }    
+        .left img{
+            width:100px;
+            border: 10px double brown;
+            border-radius: 20px;
+            background-color: rgb(243, 196, 160);
+
+            
+        }    
+            
+
+    
+        .mid{
+            border:5px solid brown;
+            border-radius: 20px;
+            display:block;
+            width:43%;
+            margin:40px auto;
+            background-color: burlywood;
+            font-size: 25px;
+
+        }
+        .right{
+            /* border:2px solid black; */
+            display:inline-block;
+            position:absolute;
+            top:35px;
+            right:35px;
+
+        }
+        .navbar{
+            display: inline-block;
+
+        }
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar li a{
+            color:black;
+            text-decoration: none;
+            padding:34px 18px
+        }
+        .navbar li a:hover,.navbar li a.active{
+            color:brown;
+            text-decoration: underline;
+
+        }
+        .left div{
+            text-align: center;
+        }
+        .btn{
+            margin:0px 9px;
+            background-color: rgb(246, 201, 130);
+            padding:6px 8px;
+            border:3px solid brown;
+            border-radius: 9px;
+            cursor: pointer;
+            font-family: "Inter", sans-serif;
+        }
+        .btn a{
+            text-decoration: none;
+            color:black;
+            font-size: 15px;
+        }
+        .btn a:hover{
+            color:brown;
+            /* text-decoration: underline; */
+            
+        }
+        .btn:hover{
+            background-color: burlywood;
+
+        }
+        .container{
+            border:5px solid brown;
+            margin:30px 500px;
+            padding:15px 15px 15px 15px;
+            width:28%;
+            border-radius: 10px;
+            /* background-color: burlywood; */
+        }
+
+        
+        .formgrp input{
+            text-align: center;
+            display: block;
+            padding:10px;
+            margin: 15px auto;
+            width:370px;
+            border:2px solid brown;
+            font-size:20px;
+            border-radius: 20px;
+            color: brown;
+            font-family: "Inter", sans-serif;
+            
+        }
+        .ln{
+            display: inline-block;
+            width:23%;
+            margin: 10px 10px auto;
+            cursor: pointer;
+            background-color:burlywood;
+            border-radius: 5px;
+            
+        }
+        .container h3{
+            text-align: center;
+        }
+        .ln:hover{
+            background-color:brown;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.png" alt="logo">
+            <div>Annu's bakery </div>
+
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn"><a href="#">call us</a></button>
+            <button class="btn"><a href="#">join group</a></button>
+
+
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join the best bakery class of India</h3>
+        <form action="backend.php">
+            <div class="formgrp">
+                <input type="text" name="text" placeholder="Enter name">
+            </div>
+            <div class="formgrp">
+                <input type="number" name="number" placeholder="Enter age">
+            </div>
+            <div class="formgrp">
+                <input type="email" name="email" placeholder="Enter E-mail ID">
+            </div>
+            <div class="formgrp">
+                <input type="number" name="num" placeholder="Enter password">
+            </div>
+            <div>
+                <button class="ln">login</button>
+                <button class="ln">next</button>
+            </div>    
+
+        </form>
+    </div>
+    
+</body>
+</html>
