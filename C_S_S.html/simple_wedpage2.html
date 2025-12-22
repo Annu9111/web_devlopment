@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour and guide</title>
+  <style>
+    body{
+        background-image:url("https://www.shutterstock.com/image-photo/waterfalls-madhya-pradesh-india-classic-260nw-2226263779.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .left{
+        /* border:2px solid black; */
+        display:inline-block;
+        position:absolute;
+        top:20px;
+        left:30px;
+        
+    }
+    .left img{
+        width:80px;
+        border:3px solid black;
+        border-radius: 100px;}
+    #tour{
+        /* border:2px black; */
+        /* border-style: double; */
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        /* background-color: rgb(233, 231, 228); */
+        text-align: center;
+
+    }    
+
+
+    
+    .mid{
+        border:3px solid black;
+        display: block;
+        margin:20px 450px auto;
+        border-radius: 10px;}
+        
+    .navbar{
+        display:inline-block;
+    } 
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        padding:5px 8px;
+        text-decoration: none;
+        color:black
+
+
+    }
+    .navbar li a:hover{
+        color: rgb(155, 3, 3);
+        text-decoration: underline;
+    }
+
+
+    
+    .right{
+        /* border :2px solid black; */
+        display: inline-block;
+        position:absolute;
+        top: 20px;
+        right: 45px;
+        
+    }
+    .btn{
+        padding:5px 5px ;
+        font-size: 10px;
+        /* background-color: blanchedalmond; */
+    }
+    .btn a{
+        text-decoration: none;
+        color:black;
+    }
+    .btn a:hover{
+        color:red;
+    }
+    .container{
+        border: 3px solid black;
+        display: block;
+        margin:50px 550px auto;
+        width:20%;
+        padding:10px 10px 10px 10px;
+    }
+    .formgrp input{
+        width:85%;
+        display: block;
+        margin:10px 10px auto;
+        text-align: center;
+    
+        padding:10px 10px ;
+    }
+    .sub{
+        padding:10px 10px;
+        margin:10px 95px auto;
+    }
+    .sub a{
+        text-decoration: none;
+        color:black;
+    }
+    .sub li a:hover , .navbar li a.active{
+        /* color:black; */
+        color: brown;
+        text-decoration: underline;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Wikimedia_Brand_Guidelines_Update_2022_Wikimedia_Logo_Brandmark.png/1200px-Wikimedia_Brand_Guidelines_Update_2022_Wikimedia_Logo_Brandmark.png" alt="logo">
+      <div id="tour">People's Tours</div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Places</a></li>
+        <li><a href="#">Wildlife</a></li>
+        <li><a href="#">Gallery</a></li></ul>
+      
+
+    </div>
+    <div class="right">
+      <div class="btn">
+        <button><a href="#">Contact us</a></button><button><a href="#">Message us</a></button>
+      </div>
+
+    </div>
+  </header>
+  <div class="container">
+    <h3>Explore the heart of India</h3>
+    <form action="backend.php" class="formgrp">
+        <input type="text" name="name" placeholder="Enter Name"></input>
+        <input type="number" name="mobile" placeholder="Mobile number" ></input>
+        <input type="email" name="email" placeholder="E-mail"></input>
+        <input type="password" name="password" placeholder="password"></input>
+        <input type="number" name="age" placeholder="Age"></input>
+        <div class="sub">
+            <button><a href="#">Submit</a></button>
+        </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
