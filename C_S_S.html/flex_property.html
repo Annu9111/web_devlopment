@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+    .container{
+        height: 300px;
+        width:100%;
+        border: 2px solid black;
+        /* intialize the container as a flexbox */
+        display: flex;
+        flex-direction: row;   /*default flex direction*/
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+
+
+
+        /* flex-wrap: nowrap;    default nowrap */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+
+        /* flex-direction + flex-wrap =flexflow */
+        /* flex-flow: row-reverse wrap; */
+
+        justify-content: center;
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+
+
+        align-items: center;      /*vertically centre*/
+        /* align-items: flex-end; */
+        align-items:flex-start;    /*default*/
+        /* align-items: stretch; */
+
+
+
+    }
+    .box{
+        border:2px solid black;
+        background-color: tomato;
+        margin:10px;
+        padding:10px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #box1{
+        /* flex properties for flex items  */
+        /* order:2; */
+        flex-shrink: 3;
+    }
+    #box3{
+        /* higher the order later it shows in container  */
+        /* order:3; */
+        flex-grow:3 ;
+        flex-basis: 340px;
+        /* when flex-dirextion is row then flex-basis is width  */
+        /* when flex-dirextion is column then flex-basis is hight  */
+
+
+    }
+    #box2{
+        /* flex=flex-grow + flex-shrink + flex-basis */
+        flex:3 3 300;
+
+        align-self: flex-end;
+        align-self: flex-start;
+        align-self: center;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+    </div>
+    
+</body>
+</html>
