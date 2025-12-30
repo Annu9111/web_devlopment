@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container{
+            display:flex;
+        }
+        .card{
+            border:2px solid brown;
+            padding:4px 5px;
+            margin:10px 10px;
+            background-color: burlywood;
+            box-shadow: 3px 3px red;   /* shadow in x-y color downwards*/
+            box-shadow: -3px -3px purple;   /* shadow in x-y color upwards*/
+            box-shadow: 3px 6px 6px red;  /*shadow in x, y, blur color*/
+            box-shadow: 3px 4px 5px 2px prple;  /* shadow in x,y,blur,spread,color*/
+            box-shadow: inset 3px 4px 5px green ;  /* shadow comes inside the box*/
+
+
+        }
+        div h2{
+            text-shadow: 2px 3px 2px white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>About c++</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt accusantium eos sunt aperiam itaque sed perspiciatis, ex optio consectetur exercitationem, sapiente nostrum minus, aut officia! Dolorum voluptatem illum doloribus doloremque quidem, quas sed!</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>About python</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quibusdam maiores blanditiis quas accusantium repellat officia eos quidem nesciunt, nihil, ab officiis distinctio tenetur quod aspernatur quos error alias culpa commodi! Debitis, maxime voluptatem?</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>About java</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id libero soluta reprehenderit, quo deserunt corporis rerum nam dolores ipsa a incidunt maxime repellendus possimus! Repudiandae voluptatem autem eaque unde atque officiis amet enim consequuntur?</p>
+        </div>
+    </div>
+    
+</body>
+</html>
