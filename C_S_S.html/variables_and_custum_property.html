@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable and custum properties</title>
+    <style>
+        :root{ 
+            --primary-color:purple;     /* access in whole code*/
+            --secondary-color:white;
+            --max-width:750px;
+        }
+        .box{
+            --box-color:green;     /* access in only box itself*/
+            width:200px;
+            height:200px;
+            color:rgb(218, 114, 17);
+            border:2px solid black;
+            background-color: var(--box-color);
+            margin:4px 5px;
+            padding:4px 5px;
+            box-shadow: 6px 6px 12px var(--box-color);
+        }
+        .container{
+            display:flex;
+            align-items: center;
+            margin:auto;
+            background-color: var(--primary-color);
+            width: var(--max-width);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box1">box2</div>
+        <div class="box" id="box1">box3</div>
+    </div>
+    
+</body>
+</html>
