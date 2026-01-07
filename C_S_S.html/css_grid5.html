@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>css grid 5</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap:1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .box{
+            background-color: yellow;
+            border:2px solid black;
+            padding:8px 9px;
+        }
+        #navbar{
+            grid-area: navbar;
+
+        }
+        #section{
+            grid-area: section;
+
+        }
+        #aside{
+            grid-area: aside;
+
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div id="navbar" class="box">
+            home   about us   contact us  more 
+        </div>
+        <div id="section" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quas atque vel. Pariatur repellendus ipsum ad laudantium quo eveniet nobis, odit dignissimos, perspiciatis deleniti porro ab quidem qui doloremque aliquam quasi eos maxime Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti et animi harum corporis ad consequatur minima dolorem neque saepe hic laborum commodi ducimus in quae recusandae reiciendis magnam, nisi at magni delectus exercitationem autem fuga? Earum quibusdam aperiam esse quo maiores quod, laudantium sed, quisquam expedita incidunt aliquid nam quos quas natus perferendis hic Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus sed dolorem deleniti placeat consequuntur? Dolores vero accusantium cum consequatur ratione totam quae reprehenderit dolorem aliquid. Omnis animi nihil corrupti ad quia neque molestiae eos?
+        </div>
+        <div id="aside" class="box">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias placeat doloremque porro Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nesciunt, possimus velit quisquam excepturi rem repellat ipsa fugit facere inventore, magnam deleniti, corrupti quidem ipsum! Incidunt dignissimos sequi voluptatem voluptas distinctio consequuntur numquam laudantium beatae excepturi vero assumenda suscipit, deserunt pariatur ex quae tempora eius eaque minus enim culpa quis iure! Saepe atque consequatur, iure ratione placeat optio sint facilis, possimus tenetur quas tempore sunt asperiores, quia reiciendis mollitia aliquam exercitationem quibusdam magni ducimus expedita nesciunt consectetur earum? Quibusdam adipisci ipsa, odio cumque consequuntur tenetur itaque facere suscipit voluptates.
+
+
+        </div>
+        <div id="footer" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolorem amet repudiandae nemo quis quidem quasi accusamus aliquam sapiente tenetur omnis veniam ducimus, molestias tempora rem dolorum! Consectetur, assumenda fugit magnam mollitia nobis veniam voluptatum tempora accusantium soluta illum illo alias doloremque facere veritatis minus. Iste voluptates fugiat totam ad cum sapiente architecto fuga sed corporis?</div>
+    </div>
     
 </body>
 </html>
