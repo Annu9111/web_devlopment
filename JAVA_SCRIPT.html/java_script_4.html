@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript string functions</title>
+    <style>
+        .container{
+            display: flex;
+            height: 600px;
+            width:600px;
+            border:2px solid red;
+            align-items: center;
+            justify-content: center;
+            background-color: burlywood;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .red{
+            font-style: italic;
+        }
+        h1{
+            align-items: center;
+            justify-content: center;
+            margin:2px 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>this is a heading</h1>
+        <p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquid nemo illo, cupiditate nobis soluta natus ad. Omnis temporibus facere, veniam modi asperiores maxime porro, impedit necessitatibus praesentium doloremque incidunt. Sapiente harum autem laudantium.</p>
+    </div>
+    <script>
+        var str="this is a string";
+        console.log(str);
+        var position=str.indexOf("is");    //it will give index of substring
+        console.log(position);
+        var a=str.lastIndexOf("is");
+        console.log(a);
+
+        //substring from a string ,slice can take negative values too!
+        var substr=str.slice(2,5);
+        console.log(substr);
+        //substring from a string but arrguments should not be negative
+        var substri=str.substring(3,5);
+        console.log(substri);
+        //substring from a string starts from 1st argument and covers till 2nd argument chars
+        var substr1=str.substr(1,4);
+        console.log(substr1);
+
+        //replace one sunstring to another
+        var rep=str.replace("string","annu");
+        console.log(rep);
+
+        //to upper case
+        var upper=str.toUpperCase();
+        console.log(upper);
+
+        //to lower case
+        var lower=str.toLowerCase();
+        console.log(lower);
+
+        //to concatenate a string into a string
+        var con=str.concat(" new string");
+        console.log(con);
+
+        //to remove whitespaces from starting and ending
+        var white="  this  id  ie  ij  ";
+        console.log(white.trim());
+
+        //to extract char from a string
+        var ch1=str.charAt(2);
+        console.log(ch1);
+
+        //to get char code
+        var ch2=str.charCodeAt(4);
+        console.log(ch2);
+
+    </script>
+</body>
+</html>
