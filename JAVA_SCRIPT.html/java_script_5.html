@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        // var string1="this is a string";
+        // var string1="this is a string2";
+        // console.log(string1);
+// -------------------------------------------------------
+        // let a="a3";
+        // {
+        //     let a="ert";
+        //     console.log(a);    //local scope
+        // }
+        // console.log(a);    //global scope
+
+        // const b="this cannot be changed";
+        // b="i want to change this ,this cannot be changed";
+        // console.log(b);
+// --------------------------------------------------------------
+        // let age=34;
+        // if (age>18){
+        //     console.log("you can drive");
+        // }
+        // else if (age==2){
+        //     console.log("age is 2");
+        // }
+        // else{
+        //     console.log("you cannot drive");
+        // }
+// ------------------------------------------------------------------
+        const cups =56;
+        switch (cups) {
+            case 4:
+                console.log("the value of cups is 4");
+                break;
+            case 45:
+                console.log("the value of cups is 45");
+                break;
+            case 23:
+                console.log("the value of cups is 23");
+                break;
+            case 56:
+                console.log("the value of cups is 56");
+                break;
+        
+            default:
+                console.log("the value of cup is none");
+                break;
+        }
+
+    </script>
+    
+</body>
+</html>
