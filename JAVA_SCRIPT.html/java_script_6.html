@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">
+        this is simple container
+    </div>
+    <script>
+        let myvar1=34;
+        let myvar2="annu";
+        let myvar3=true;
+        let myvar4=null;
+        let myvar5=undefined;
+
+
+        // object in javascript 
+        let employee={                    //creates an object
+            name:"annu",
+            salary:10,
+            channel:"codeAndannu"
+        };
+        console.log(employee);
+        console.log(employee.channel);
+
+        let arr=new Array()        //create new empty array
+        let arr1=new Array(23)       //create new array with 23 empty elements
+
+
+        //arrays 
+        let name=[1,2,3,4,"annu",true];
+        console.log(name);
+        console.log(name[0]);
+        console.log(name[3]);
+        console.log(name.length);
+        name=name.sort();
+        name.push("this pushed");         //add new element in array
+        console.log(name);
+
+    </script>
+</body>
+</html>
