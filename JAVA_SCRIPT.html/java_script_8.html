@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interaction using alert, confirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia, voluptates quod nobis suscipit consectetur, animi quos debitis natus blanditiis iste officiis eaque!
+    </div>
+    <script>
+        //alert in browser in java_script-->does not return anything
+        alert("hello welcome to my channel !!");
+
+        //prompt
+        let name=prompt("what is your name?","guest");    // second value is for default-->guest
+        console.log(name);
+
+
+        //confirm
+        let close=confirm("Do you really want to close this app");
+        if (close){
+            console.log("app is closed!!");
+        }   
+        else{
+            console.log("app is not closed!!");
+        } 
+
+        
+
+    </script>
+</body>
+</html>
