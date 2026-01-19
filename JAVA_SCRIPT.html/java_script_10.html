@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>HOME</li>
+            <li>ABOUT US</li>
+            <li>CONTACT US</li>
+            <li>SERVICES</li>
+        </ul>
+    </div>
+
+    <script>
+        let main=document.getElementById("main");    //use to do modification in console
+        console.log(main);
+
+        let nav=document.getElementById("nav");
+        console.log(nav);
+
+        let container=document.getElementsByClassName("container");
+        console.log(container);
+    </script>
+</body>
+</html>
