@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set timeout and clear timeout</title>
+</head>
+<body>
+    <div class="container">
+        this is a container
+    </div>
+    <script>
+        console.log("java_script 12");
+
+        // setTimeout-->allows us to run the function once after the interval of timeout
+        // clearTimeout--->allows us to run the function repeatedly after the interval of time/
+        
+        function greet(name){
+            console.log("hellow good morning "+name);
+        }
+        setTimeout(greet,5000,"annu");
+
+        timeout=setTimeout(greet,5000,"annu");
+        console.log(timeout);
+
+        clearTimeout(timeout);
+
+        intervalid=setInterval(greet,5000,"annu");
+        clearInterval(intervalid);
+    </script>
+</body>
+</html>
