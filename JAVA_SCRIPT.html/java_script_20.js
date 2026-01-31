@@ -1,7 +1,6 @@
 const http=require("http")
 const fs=require("fs")
 const path = require("path");
-s
 const filePath = path.join(__dirname, "java_script_2.html");
 const filecontent=fs.readFileSync(filePath)
 
